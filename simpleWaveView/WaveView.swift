@@ -29,21 +29,23 @@ class WaveView: UIView {
     private func drawWaveView() {
         var data: [UInt] = []
         for _ in 0...bytesCount {
-            let posetiveNumber = UInt.random(in: 0...255)
-            data.append(posetiveNumber)
+            let byte = UInt.random(in: 0...255)
+            data.append(byte)
         }
 
-        let finishPointPath = UIBezierPath(roundedRect: .zero, cornerRadius: 3)
+        let finishPointPath = UIBezierPath()
         finishPointPath.lineWidth = (bounds.width / (CGFloat(bytesCount) * 1.5))
 
-        for number in data {
-            let factor: CGFloat = CGFloat(Double(number) / 255)
+        for wave in data {
+            let factor: CGFloat = CGFloat(Double(wave) / 255)
             var waveSize = factor * bounds.height * 1.5
             waveSize = max(waveSize, 10)
             let y = bounds.height - waveSize
-            finishPointPath.move(to: .init(x: finishPointPath.currentPoint.x + finishPointPath.lineWidth * 1.5, y: y))
+            let padding = finishPointPath.lineWidth * 1.5
+            finishPointPath.move(to: .init(x: finishPointPath.currentPoint.x + padding, y: y))
             finishPointPath.addLine(to: .init(x: Double(finishPointPath.currentPoint.x), y: Double(waveSize)))
         }
+
         finishPointPath.close()
         color.setStroke()
         finishPointPath.fill()
