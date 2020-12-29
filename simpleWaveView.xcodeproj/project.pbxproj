@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A715057D3016C551F32A03E /* Pods_simpleWaveView_simpleWaveViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77B8955662527D7B6FB8C9E /* Pods_simpleWaveView_simpleWaveViewUITests.framework */; };
+		1FD827CB964E87F1AF194F8C /* Pods_simpleWaveView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF7B4B61512EE29CCE815CA /* Pods_simpleWaveView.framework */; };
 		C017ACC025930F7F006BC94D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017ACBF25930F7F006BC94D /* AppDelegate.swift */; };
 		C017ACC225930F7F006BC94D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017ACC125930F7F006BC94D /* SceneDelegate.swift */; };
 		C017ACC425930F7F006BC94D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017ACC325930F7F006BC94D /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		C017ACD725930F80006BC94D /* simpleWaveViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017ACD625930F80006BC94D /* simpleWaveViewTests.swift */; };
 		C017ACE225930F80006BC94D /* simpleWaveViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017ACE125930F80006BC94D /* simpleWaveViewUITests.swift */; };
 		C017ACF325933852006BC94D /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C017ACF225933852006BC94D /* WaveView.swift */; };
+		C0FE47A6259B2767005D09FD /* APWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE47A5259B2767005D09FD /* APWaveView.swift */; };
+		D19752F86119EC1773790706 /* Pods_simpleWaveViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1289DFE8426794DAEDAA73A /* Pods_simpleWaveViewTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1176CC885BB7767513E5D089 /* Pods-simpleWaveView-simpleWaveViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleWaveView-simpleWaveViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-simpleWaveView-simpleWaveViewUITests/Pods-simpleWaveView-simpleWaveViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CF7B4B61512EE29CCE815CA /* Pods_simpleWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simpleWaveView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48389CA1CF1B32110CDEFE8F /* Pods-simpleWaveViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleWaveViewTests.release.xcconfig"; path = "Target Support Files/Pods-simpleWaveViewTests/Pods-simpleWaveViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		62A61BE50882DD703BFA510E /* Pods-simpleWaveView-simpleWaveViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleWaveView-simpleWaveViewUITests.release.xcconfig"; path = "Target Support Files/Pods-simpleWaveView-simpleWaveViewUITests/Pods-simpleWaveView-simpleWaveViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9195A9FDBAB25BA6C971D40D /* Pods-simpleWaveView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleWaveView.release.xcconfig"; path = "Target Support Files/Pods-simpleWaveView/Pods-simpleWaveView.release.xcconfig"; sourceTree = "<group>"; };
+		9A9110C9768B688B6CE24245 /* Pods-simpleWaveViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleWaveViewTests.debug.xcconfig"; path = "Target Support Files/Pods-simpleWaveViewTests/Pods-simpleWaveViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F89FE8D4C9B7A371C88BAD8 /* Pods-simpleWaveView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpleWaveView.debug.xcconfig"; path = "Target Support Files/Pods-simpleWaveView/Pods-simpleWaveView.debug.xcconfig"; sourceTree = "<group>"; };
+		A77B8955662527D7B6FB8C9E /* Pods_simpleWaveView_simpleWaveViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simpleWaveView_simpleWaveViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C017ACBC25930F7F006BC94D /* simpleWaveView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleWaveView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C017ACBF25930F7F006BC94D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C017ACC125930F7F006BC94D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +63,8 @@
 		C017ACE125930F80006BC94D /* simpleWaveViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleWaveViewUITests.swift; sourceTree = "<group>"; };
 		C017ACE325930F80006BC94D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C017ACF225933852006BC94D /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		C0FE47A5259B2767005D09FD /* APWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APWaveView.swift; sourceTree = "<group>"; };
+		C1289DFE8426794DAEDAA73A /* Pods_simpleWaveViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simpleWaveViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD827CB964E87F1AF194F8C /* Pods_simpleWaveView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19752F86119EC1773790706 /* Pods_simpleWaveViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A715057D3016C551F32A03E /* Pods_simpleWaveView_simpleWaveViewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA802C962C20F8AA8043C7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F89FE8D4C9B7A371C88BAD8 /* Pods-simpleWaveView.debug.xcconfig */,
+				9195A9FDBAB25BA6C971D40D /* Pods-simpleWaveView.release.xcconfig */,
+				1176CC885BB7767513E5D089 /* Pods-simpleWaveView-simpleWaveViewUITests.debug.xcconfig */,
+				62A61BE50882DD703BFA510E /* Pods-simpleWaveView-simpleWaveViewUITests.release.xcconfig */,
+				9A9110C9768B688B6CE24245 /* Pods-simpleWaveViewTests.debug.xcconfig */,
+				48389CA1CF1B32110CDEFE8F /* Pods-simpleWaveViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6059B33C0E0C989CBA70E140 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CF7B4B61512EE29CCE815CA /* Pods_simpleWaveView.framework */,
+				A77B8955662527D7B6FB8C9E /* Pods_simpleWaveView_simpleWaveViewUITests.framework */,
+				C1289DFE8426794DAEDAA73A /* Pods_simpleWaveViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C017ACB325930F7F006BC94D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +125,8 @@
 				C017ACD525930F80006BC94D /* simpleWaveViewTests */,
 				C017ACE025930F80006BC94D /* simpleWaveViewUITests */,
 				C017ACBD25930F7F006BC94D /* Products */,
+				0AA802C962C20F8AA8043C7B /* Pods */,
+				6059B33C0E0C989CBA70E140 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +147,7 @@
 				C017ACC125930F7F006BC94D /* SceneDelegate.swift */,
 				C017ACC325930F7F006BC94D /* ViewController.swift */,
 				C017ACF225933852006BC94D /* WaveView.swift */,
+				C0FE47A5259B2767005D09FD /* APWaveView.swift */,
 				C017ACC525930F7F006BC94D /* Main.storyboard */,
 				C017ACC825930F7F006BC94D /* Assets.xcassets */,
 				C017ACCA25930F7F006BC94D /* LaunchScreen.storyboard */,
@@ -138,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C017ACE625930F80006BC94D /* Build configuration list for PBXNativeTarget "simpleWaveView" */;
 			buildPhases = (
+				929A6B1966836B24A58990C0 /* [CP] Check Pods Manifest.lock */,
 				C017ACB825930F7F006BC94D /* Sources */,
 				C017ACB925930F7F006BC94D /* Frameworks */,
 				C017ACBA25930F7F006BC94D /* Resources */,
+				462EA14FF2B4660E4C2B8A25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C017ACE925930F80006BC94D /* Build configuration list for PBXNativeTarget "simpleWaveViewTests" */;
 			buildPhases = (
+				11E1E7ACA125FE5F947E8082 /* [CP] Check Pods Manifest.lock */,
 				C017ACCE25930F80006BC94D /* Sources */,
 				C017ACCF25930F80006BC94D /* Frameworks */,
 				C017ACD025930F80006BC94D /* Resources */,
@@ -173,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C017ACEC25930F80006BC94D /* Build configuration list for PBXNativeTarget "simpleWaveViewUITests" */;
 			buildPhases = (
+				EEE86DC3C4F6C32E50F7D926 /* [CP] Check Pods Manifest.lock */,
 				C017ACD925930F80006BC94D /* Sources */,
 				C017ACDA25930F80006BC94D /* Frameworks */,
 				C017ACDB25930F80006BC94D /* Resources */,
+				919A552CFC15C41241BF4AB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +304,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11E1E7ACA125FE5F947E8082 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-simpleWaveViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		462EA14FF2B4660E4C2B8A25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-simpleWaveView/Pods-simpleWaveView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-simpleWaveView/Pods-simpleWaveView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-simpleWaveView/Pods-simpleWaveView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		919A552CFC15C41241BF4AB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-simpleWaveView-simpleWaveViewUITests/Pods-simpleWaveView-simpleWaveViewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-simpleWaveView-simpleWaveViewUITests/Pods-simpleWaveView-simpleWaveViewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-simpleWaveView-simpleWaveViewUITests/Pods-simpleWaveView-simpleWaveViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		929A6B1966836B24A58990C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-simpleWaveView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEE86DC3C4F6C32E50F7D926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-simpleWaveView-simpleWaveViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C017ACB825930F7F006BC94D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +415,7 @@
 				C017ACC425930F7F006BC94D /* ViewController.swift in Sources */,
 				C017ACF325933852006BC94D /* WaveView.swift in Sources */,
 				C017ACC025930F7F006BC94D /* AppDelegate.swift in Sources */,
+				C0FE47A6259B2767005D09FD /* APWaveView.swift in Sources */,
 				C017ACC225930F7F006BC94D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +589,7 @@
 		};
 		C017ACE725930F80006BC94D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F89FE8D4C9B7A371C88BAD8 /* Pods-simpleWaveView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +608,7 @@
 		};
 		C017ACE825930F80006BC94D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9195A9FDBAB25BA6C971D40D /* Pods-simpleWaveView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +627,7 @@
 		};
 		C017ACEA25930F80006BC94D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9110C9768B688B6CE24245 /* Pods-simpleWaveViewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +649,7 @@
 		};
 		C017ACEB25930F80006BC94D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48389CA1CF1B32110CDEFE8F /* Pods-simpleWaveViewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +671,7 @@
 		};
 		C017ACED25930F80006BC94D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1176CC885BB7767513E5D089 /* Pods-simpleWaveView-simpleWaveViewUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +691,7 @@
 		};
 		C017ACEE25930F80006BC94D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A61BE50882DD703BFA510E /* Pods-simpleWaveView-simpleWaveViewUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

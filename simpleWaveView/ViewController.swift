@@ -6,19 +6,26 @@
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
+
+    private lazy var waveView = APWaveView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let waveView = WaveView(color: .black, bytesCount: 70)
+        view.backgroundColor = UIColor.blue
         view.addSubview(waveView)
-        waveView.translatesAutoresizingMaskIntoConstraints = false
-        waveView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
-        waveView.centerXAnchor.constraint(lessThanOrEqualTo: view.centerXAnchor).isActive = true
-        waveView.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        waveView.widthAnchor.constraint(equalToConstant: 320).isActive = true
+        waveView.snp.makeConstraints { (make) in
+            make.height.equalTo(30)
+            make.width.equalToSuperview().multipliedBy(0.9)
+            make.center.equalToSuperview()
+        }
 
+        // set wave view value
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.waveView.updateValue(value: 0.5)
+        }
     }
 }
 

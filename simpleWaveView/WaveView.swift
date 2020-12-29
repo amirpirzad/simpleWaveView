@@ -8,44 +8,46 @@
 import UIKit
 
 class WaveView: UIView {
-    var bytesCount: Int = 70
-    var color: UIColor!
-
+    var bytesCount: Int
+    var color: UIColor
+    var paths: [(item: UInt, move: CGPoint, line: CGPoint, waveSize: CGFloat)] = []
+    
     init(color: UIColor, bytesCount: Int) {
         self.color = color
         self.bytesCount = bytesCount
         super.init(frame: .zero)
-        backgroundColor = .white
+        backgroundColor = .clear
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     override func draw(_ rect: CGRect) {
         drawWaveView()
     }
-
+    
     private func drawWaveView() {
         var data: [UInt] = []
         for _ in 0...bytesCount {
             let byte = UInt.random(in: 0...255)
             data.append(byte)
         }
-
         let finishPointPath = UIBezierPath()
         finishPointPath.lineWidth = (bounds.width / (CGFloat(bytesCount) * 1.5))
-
+        
         for wave in data {
             let factor: CGFloat = CGFloat(Double(wave) / 255)
-            var waveSize = factor * bounds.height * 1.5
-            waveSize = max(waveSize, 10)
+            let waveSize = factor * bounds.height * 1.5
             let y = bounds.height - waveSize
             let padding = finishPointPath.lineWidth * 1.5
-            finishPointPath.move(to: .init(x: finishPointPath.currentPoint.x + padding, y: y))
-            finishPointPath.addLine(to: .init(x: Double(finishPointPath.currentPoint.x), y: Double(waveSize)))
+            let move = CGPoint(x: finishPointPath.currentPoint.x + padding, y: y)
+            finishPointPath.move(to: move)
+            let line = CGPoint(x: Double(finishPointPath.currentPoint.x), y: Double(waveSize))
+            
+            finishPointPath.addLine(to: line)
         }
-
+        
         finishPointPath.close()
         color.setStroke()
         finishPointPath.fill()

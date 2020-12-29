@@ -1,0 +1,6 @@
+framework module Pods_simpleWaveView_simpleWaveViewUITests {
+  umbrella header "Pods-simpleWaveView-simpleWaveViewUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
