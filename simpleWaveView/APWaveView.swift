@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class APWaveView: UIView {
-    private lazy var waveView = WaveView(color: .black, bytesCount: 70)
+    private lazy var waveView = WaveView(bytesCount: 70)
     private lazy var mainView = UIView()
     private lazy var stack = UIView()
     private lazy var clearView = UIView()

@@ -9,10 +9,8 @@ import UIKit
 
 class WaveView: UIView {
     var bytesCount: Int
-    var color: UIColor
-    
-    init(color: UIColor, bytesCount: Int) {
-        self.color = color
+
+    init(bytesCount: Int) {
         self.bytesCount = bytesCount
         super.init(frame: .zero)
         backgroundColor = .clear
@@ -48,8 +46,6 @@ class WaveView: UIView {
         }
         
         finishPointPath.close()
-        color.setStroke()
-        finishPointPath.fill()
         finishPointPath.stroke()
     }
 }

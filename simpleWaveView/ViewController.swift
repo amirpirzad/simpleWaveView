@@ -14,7 +14,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.blue
+        view.backgroundColor = UIColor.systemIndigo
         view.addSubview(waveView)
         waveView.snp.makeConstraints { (make) in
             make.height.equalTo(30)
