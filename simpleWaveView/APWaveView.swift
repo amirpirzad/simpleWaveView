@@ -62,7 +62,6 @@ class APWaveView: UIView {
 
         // PanGesture
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panHandler(sender:)))
-        panGesture.allowedScrollTypesMask = .continuous
         stack.addGestureRecognizer(panGesture)
 
         // UITapHandler

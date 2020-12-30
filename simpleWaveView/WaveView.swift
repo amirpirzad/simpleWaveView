@@ -10,7 +10,6 @@ import UIKit
 class WaveView: UIView {
     var bytesCount: Int
     var color: UIColor
-    var paths: [(item: UInt, move: CGPoint, line: CGPoint, waveSize: CGFloat)] = []
     
     init(color: UIColor, bytesCount: Int) {
         self.color = color
