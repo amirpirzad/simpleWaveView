@@ -21,8 +21,10 @@ class APWaveView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        clearView.backgroundColor = UIColor.white.withAlphaComponent(0.5)
-        fillView.backgroundColor = .white
+        customInit()
+    }
+
+    func customInit() {
         addSubview(stack)
         addSubview(mainView)
         stack.snp.makeConstraints { (make) in
@@ -88,7 +90,8 @@ class APWaveView: UIView {
     }
 
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        customInit()
     }
 
     private func updateWidth(width: CGFloat) {
@@ -101,5 +104,10 @@ class APWaveView: UIView {
     func updateValue(value: CGFloat?) {
         let width = (value ?? 0) * frame.size.width
         updateWidth(width: width)
+    }
+
+    func update(defaultColor: UIColor, seekColor: UIColor) {
+        clearView.backgroundColor = defaultColor
+        fillView.backgroundColor = seekColor
     }
 }
